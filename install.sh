@@ -76,6 +76,10 @@ clear
 
 
 # Uruchomienie odpowiednich skryptów
+if [[ $sbin ]]; then
+    ./sbin.sh
+fi
+
 if [[ $firmware ]]; then
     ./firmware.sh
 fi
