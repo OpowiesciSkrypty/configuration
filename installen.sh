@@ -74,8 +74,12 @@ read -rsn1 -p "Press Enter to continue..."
 clear
 
 # Run the appropriate scripts
+if [[ $sbinen ]]; then
+    ./sbinen.sh
+fi
+
 if [[ $firmware ]]; then
-    ./firmware.sh
+    ./firmen.sh
 fi
 
 if [[ $beep ]]; then
